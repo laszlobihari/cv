@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Lexend_Deca;
+    src: url("Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+* {
+    font-family: Lexend_Deca, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --beige: #f5e6dc;
+    --dark-blue: #2a354b;
+    --white: white;
+}
+
+html {
+    font-size: 75%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--dark-blue);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 1fr;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.profile-pic-container {
+    grid-column: 1/3;
+}
+
+.profile-pic-container img {
+    height: 13vh;
+    margin-top: 1vh;
+    margin-left: 1vh; 
+}
+
+.header-title {
+    grid-column: 7/20;
+    margin-top: 4.5vh;
+}
+
+.main-container {
+    width: 100vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    color: var(--dark-blue)
+}
+
+.left-container {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.right-container {
+    grid-column: 6/11;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.right-container h2 {
+    padding-top: 1.2rem;
+}
+
+.right-container h4 {
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+.personal-profile {
+    grid-row: 1/1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.work-experience {
+    grid-row: 2/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.education {
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.extra-activities {
+    grid: 6/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.left-section-title {
+    grid-row: 1/1;
+    background-color: var(--beige);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.left-content-box {
+    grid-row: 2/4;
+    background-color: var(--white);
+}
+
+.left-content-box p {
+    font-size: 0.9rem;
+    padding: 1rem
+}
+
+.left-content-box h3, .education-content-box h3 {
+    padding: 0.2rem 0.5rem 0.5rem 1rem;
+}
+
+.left-content-box h4, .left-content-box p, .education-content-box h4 {
+    padding: 0.2rem 0.5rem 0.5rem 1rem;
+}
+
+.education-content-box {
+    grid-row: 2/7;
+    background-color: var(--white);
+    padding-top: 0.75rem;
+}
+
+#work-experience-content-box {
+    padding-top: 0.75rem;
+}
+
+a {
+    color: inherit
+}
+
+@media (max-width: 350px) {
+    .right-container h4 {
+        font-weight: 500;
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    header {
+        width: 100vw;
+        height: 15vh;
+        background-color: var(--dark-blue);
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: 1fr;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-title {
+        grid-column: 4/20;
+        margin-top: 4.5vh;
+    }
+
+
+
+    #pitch {
+        padding-top: 1.4rem;
+    }
+
+    .left-container {
+        grid-column: 1/8;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    
+    .right-container {
+        grid-column: 8/11;
+        background-color: var(--beige);
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
